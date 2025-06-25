@@ -24,3 +24,24 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+
+# Getting Started with Create Django
+
+## clone project
+git clone https://github.com/alexa-coder/Ecommerce_application.git
+
+## install dependencies
+pip install -r requirements.txt
+
+## make migrations
+python manage.py makemigrations
+python manage.py migrate
+
+## Create super user admin
+python manage.py createsuperuser
+
+## Run the server
+python manage.py runserver
+
+
