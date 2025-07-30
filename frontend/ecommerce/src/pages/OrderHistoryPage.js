@@ -35,6 +35,7 @@ const OrderHistoryPage = () => {
                         <thead className="table-dark">
                             <tr>
                                 <th>Order #</th>
+                                <th>Name</th>
                                 <th>Date</th>
                                 <th>Status</th>
                                 <th>Total</th>
@@ -45,6 +46,7 @@ const OrderHistoryPage = () => {
                             {orders.map((order) => (
                                 <tr key={order.id}>
                                     <td>{order.id}</td>
+                                    <td>{order.name}</td>
                                     <td>{new Date(order.created_at).toLocaleDateString()}</td>
                                     <td>
                                         <span className={`badge ${order.status === 'P' ? 'bg-warning text-dark' :
